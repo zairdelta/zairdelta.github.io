@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleskills.css" />
+    <link rel="stylesheet" href="./css/portafolio.css" />
+
+    <title>Portafolio Zair</title>
+  </head>
+  <body>
+    <!-- <div class="preloader">
+      <div class="counter">0</div>
+    </div> -->
+    <div id="particles-js">
+      <header class="header">
+        <div class="header_text">
+          <h1>Hi <br /><span>My name is <span style="color: cyan;">Zair</span></span></h1>
+          <p class="front">front and backend developer</p>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="img/perfil.jpeg" alt="">
+          </div>
+        </div>
+      </header>
+    </div>
+    <section style=" color: white;" class="aboutMe">
+      <h1 id="titles">About <span style="color: cyan;">me</span></h1>
+      <br><br><br>
+      <div class="itemsAbout">
+        <div id="textAbout"><p>Hola soy Zair, soy un joven universitario que le gusta programar y jugar videojuegos, me considero responsable y no tengo problema en trabajar en equipo</p> <br>
+          <h3>Experiencia</h3><br>  
+        <ul style="width: 95%;">
+          <li>CBTis 156 Tecnico media superior en desarrollo de software</li>
+          <li>UTT Tecnico superior en desarrollo de software multiplataforma</li>
+          <li>Desarrollador front y backend en proyecto Ax DAO en Ax technology</li>
+        </ul></div>
+        <picture ><img width="400px" height="400px" src="img/about.jpg" alt=""></picture>
+      </div>
+      
+    </section>
+    <section class="skills">
+      <h1 id="titles">My <span style="color: cyan;">skills</span></h1><br><br><br>
+      <picture class="imgSkills"> 
+        <div style="width: 200px; height:100%"><i id="iconsSkills" class="fa-brands fa-angular"></i><br><h2>Angular</h2></div>
+        <div style="width: 200px; height:100%"><i id="iconsSkills" class="fa-brands fa-node"></i><br><h2>NodeJS</h2></div>
+        <div style="width: 200px; height:100%"><i id="iconsSkills" class="fa-brands fa-js-square"></i><br><h2>Javascript</h2></div>
+        <div style="width: 200px; height:100%"><i id="iconsSkills" class="fa-brands fa-html5"></i><br><h2>Html5</h2></div>
+        <div style="width: 200px; height:100%"><i id="iconsSkills" class="fa-brands fa-css3-alt"></i><br><h2>Css3</h2></div>
+        <div style="width: 200px; height:100%"><i ID="iconsSkills" class="fa-brands fa-bootstrap"></i><br><h2>Bootstrap5</h2></div>
+        <div style="width: 200px; height:100%"><i ID="iconsSkills" class="fa-brands fa-github"></i><br><h2>Github</h2></div>
+      </picture>
+    </section>
+    <section class="portafolio">
+      <h1 id="titles">Portafolio</h1><br><br><br>
+      <div class="itemsPortafolio">
+        <div class="card" style="width: 18rem;">
+          <img src="img/green_house.png" height="150px"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="titleCard">Green house</h1>
+            <p class="card-text">Frontend con loggin y dashboard con dashboard y graficas que se actualizan automaticamente.</p>
+            <p class="subtituloCard">Tecnologia</p>
+            <p class="tecnologias">@Angular - @AdonisJS</p>
+            <a class="buttonVerMas" href="" data-bs-toggle="modal" data-bs-target="#GreenHouseModal">Ver mas</a>
+          </div>
+          <div class="modal fade" id="GreenHouseModal" tabindex="-1" aria-labelledby="GreenModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GreenModalLabel">Green house</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselGreen" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselGreen" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselGreen" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselGreen" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/green_house.png" class="d-block w-100" alt="...">
+            
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/green_house1.png" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="img/green_house2.png" class="d-block w-100" alt="...">
+             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div><br><br>
+        <div class="infoModal">
+          <h1>Informacion</h1><br><br>
+          <p>Esta web fue un proyecto de integradora de la universidad consistia en un front y un backend para poter almacenar datos de sensores cada cierto tiempo y luego almacenarlos y mostrarlos en graficas cada que se actualizara y tambien el front tenia un dashboard exclusivamente para administradores.</p>
+        </div><br>
+        <div class="socialPortafolio">
+          <div><a target="_blank" href="#"><i class="fa-solid fa-file-arrow-up"></i><span>Web(No disponible)</span></a></div>
+          <div><a target="_blank" href="https://github.com/zairdelta/Integradora-ts-angular-green-house"><i class="fa-brands fa-github"></i><span>Repositorio</span></a></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/ax2.png" height="150px"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="titleCard">Ax DAO</h1>
+            <p class="card-text">Frontend con loggin con metamask, dashboard y subscripcion de usuarios con nodeJS.</p>
+            <p class="subtituloCard">Tecnologia</p>
+            <p class="tecnologias">@Angular - @NodeJS</p>
+            <a class="buttonVerMas" href="" data-bs-toggle="modal" data-bs-target="#axdaomodal">Ver mas</a>
+          </div>
+          <div class="modal fade" id="axdaomodal" tabindex="-1" aria-labelledby="axdaoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="axdaoModalLabel">Ax DAO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselAxDao" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAxDao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselAxDao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselAxDao" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/ax1.png" class="d-block w-100" alt="...">
+            
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/ax2.png" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="img/ax3.png" class="d-block w-100" alt="...">
+             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAxDao" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAxDao" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div><br><br>
+        <div class="infoModal">
+          <h1>Informacion</h1><br><br>
+          <p>Esta web fue hecha en el transcurso de mi estadia profesional en la empresa Ax technologys el cual era hacer front y backend con los requerimientos que pidieron, tiene un login con metamask y control de usuarios desde base de datos con nodeJS.</p>
+        </div><br>
+        <div class="socialPortafolio">
+          <div><a target="_blank" href="https://app.axdao.finance/"><i class="fa-solid fa-file-arrow-up"></i><span>Web</span></a></div>
+          <div><a target="_blank" style="touch-action: none;" href="#"><i class="fa-brands fa-github"></i><span>Repositorio(No disponible)</span></a></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/biblio2.png" height="150px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="titleCard">Bibloteca</h1>
+            <p class="card-text">Frontend con loggin con alta y baja de libros y asi mismo actualizar alguno tambien con un apartado de dashboard.</p>
+            <p class="subtituloCard">Tecnologia</p>
+            <p class="tecnologias">@Angular - @AdonisJS</p>
+            <a class="buttonVerMas" href="" data-bs-toggle="modal" data-bs-target="#biblioteca">Ver mas</a>
+          </div>
+          <div class="modal fade" id="biblioteca" tabindex="-1" aria-labelledby="bibliotecaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bibliotecaModalLabel">Biblioteca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselBiblioteca" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBiblioteca" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBiblioteca" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBiblioteca" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/biblio1.png" class="d-block w-100" alt="...">
+            
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/biblio2.png" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="img/biblio3.png" class="d-block w-100" alt="...">
+             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div><br><br>
+        <div class="infoModal">
+          <h1>Informacion</h1><br><br>
+          <p>Esta web fue un proyecto de la universidad de una administracion de una biblioteca, la cual tiene alta y baja de usuarios y libros y asi mismo poder actualizar estos, cuenta con un dashboard para administradores.</p>
+        </div><br>
+        <div class="socialPortafolio">
+          <div><a target="_blank" href="#"><i class="fa-solid fa-file-arrow-up"></i><span>Web(No disponible)</span></a></div>
+          <div><a target="_blank" href="https://github.com/zairdelta/sistema-gestion-bibliotega-angular"><i class="fa-brands fa-github"></i><span>Repositorio</span></a></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+      function counter(){
+        var count = setInterval(function(){
+          var c = parseInt($('.counter').text());
+          $('.counter').text((++c).toString());
+          if (c==100) {
+            clearInterval(count)
+            $('.counter').addClass('hide')
+            $('.preloader').addClass('active')
+          }
+        },60)
+      }
+      counter()
+    </script>
+    <h1></h1>
+  </body>
+</html>
