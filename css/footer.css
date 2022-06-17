@@ -8,3 +8,11 @@
     align-items: center;
     color: white;
 }
+.card-body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+.modal-body,.modal-header,.modal-footer{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
