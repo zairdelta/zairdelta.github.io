@@ -1,5 +1,5 @@
 const typed = new Typed('.typed',{
-    strings:['<i class="spanBack">front and backend developer</i>'],
+    strings:['<i><</i><i class="spanBack">front and backend developer</i><i>/></i>'],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
 	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
@@ -12,4 +12,16 @@ const typed = new Typed('.typed',{
 	showCursor: true, // Mostrar cursor palpitanto
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+
+
+$(function(){
+	var navbar = $('.navbar-inner');
+	$(window).scroll(function(){
+		if ($(window).scrollTop()<=40) {
+			navbar.removeClass('navbar-scroll');
+		}else{
+			navbar.addClass('navbar-scroll');
+		}
+	});
 });
