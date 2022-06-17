@@ -51,6 +51,9 @@
         margin-top: 80px;
         height: 100%;
     }
+    .itemsAbout picture img{
+        width: 100%;
+    }
     #textAbout{
         text-align: center;
         width: 100%;
