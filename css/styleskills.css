@@ -36,6 +36,8 @@
     height: 100px;
 }
 .imgSkills #boxi{
+    margin-top: 20px;
+    color: cyan;
     font-size: 120px;
 }
 @media (max-width: 600px) {

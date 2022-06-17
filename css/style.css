@@ -100,7 +100,7 @@ body {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   width: 100%;
-  height: 150px;
+  height: 120px;
   color: white;
   padding: 10px;
   font-style: italic;
@@ -124,6 +124,7 @@ body {
   height: 200px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+  margin-top: 28px;
   overflow: hidden;
 }
 .box::before {
