@@ -14,14 +14,36 @@
     <title>Portafolio Zair</title>
   </head>
   <body>
-    <!-- <div class="preloader">
-      <div class="counter">0</div>
-    </div> -->
+    <div class="preloader">
+      <div class="loader">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+
+      </div>
+    </div>
     <div id="particles-js">
       <header class="header">
         <div class="header_text">
           <h1>Hi <br /><span>My name is <span style="color: cyan;">Zair</span></span></h1>
-          <p class="front">front and backend developer</p>
+          <span class="typed"></span>
         </div>
         <div class="box">
           <div class="content">
@@ -248,24 +270,22 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript">
-      function counter(){
-        var count = setInterval(function(){
-          var c = parseInt($('.counter').text());
-          $('.counter').text((++c).toString());
-          if (c==100) {
-            clearInterval(count)
-            $('.counter').addClass('hide')
-            $('.preloader').addClass('active')
-          }
-        },60)
-      }
-      counter()
+      $(function(){
+setTimeout(function(){ 
+$(".preloader").addClass("out");
+}, 5000);
+setTimeout(function(){ 
+$(".preloader").remove();
+}, 6000);
+});
     </script>
     <h1></h1>
   </body>
