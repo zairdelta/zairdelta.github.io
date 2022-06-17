@@ -35,17 +35,18 @@
     width: 100px;
     height: 100px;
 }
-@media (max-width: 750px) {
+@media (max-width: 600px) {
     .skills{
-        height: 200vh;
-        margin-bottom: 40px;
+        margin-top: 80px;
+        height: 100%;
     }
     .itemsAbout{
         flex-direction: column;
         width: 100%;
     }
     .aboutMe{
-        height: 150vh;
+        margin-top: 80px;
+        height: 100%;
     }
     #textAbout{
         text-align: center;
