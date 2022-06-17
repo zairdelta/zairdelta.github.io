@@ -35,6 +35,9 @@
     width: 100px;
     height: 100px;
 }
+.imgSkills #boxi{
+    font-size: 120px;
+}
 @media (max-width: 600px) {
     .skills{
         margin-top: 80px;
