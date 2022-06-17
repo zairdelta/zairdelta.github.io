@@ -14,7 +14,7 @@
   width: 100%;
   height: 120vh;
   background: #070707;
-  z-index: 3;
+  z-index: 5;
   animation: animateBg 10s linear infinite;
 }
 .preloader.out{
@@ -182,6 +182,7 @@ body {
   }
   .header_text {
     width: 400px;
+    height: 150px;
   }
   .box{
     margin-top: 0;

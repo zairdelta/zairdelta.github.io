@@ -57,7 +57,7 @@
     padding: 0;
     position: fixed;
     top: 0;
-    z-index: 4;
+    z-index: 3;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
     transition-duration: 0.6s;
 }
