@@ -87,16 +87,108 @@ body {
   width: 100%;
   height: 100vh;
 }
-.header {
+.backFonts{
+  position: relative;
   width: 100%;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  background: #111;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+.backFonts .roww{
+  position: relative;
+  top:-50%;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  white-space: nowrap;
+  font-size: 64px;
+  transform: rotate(-30deg);
+}
+.backFonts .icon{
+  color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  padding: 0 5px;
+  user-select: none;
+  cursor: default;
+}
+.backFonts .icon:hover{
+  transition: 0s;
+  color: #44fbb6;
+  text-shadow: 0 0 120px #44fbb6;
+}
+.backFonts .roww div{
+  font-size: 1em;
+  white-space: nowrap;
+  animation: backAnimate1 80s linear infinite;
+  animation-delay: -80s;
+}
+.backFonts .roww div:nth-child(2){
+  animation: backAnimate2 80s linear infinite;
+  animation-delay: -40s;
+}
+@keyframes backAnimate2{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+@keyframes backAnimate1{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.backFonts .roww:nth-child(even) div{
+  font-size: 1em;
+  white-space: nowrap;
+  animation: backAnimate3 80s linear infinite;
+  animation-delay: -80s;
+}
+.backFonts .roww:nth-child(even) div:nth-child(2){
+  animation: backAnimate4 80s linear infinite;
+  animation-delay: -40s;
+}
+@keyframes backAnimate3{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+@keyframes backAnimate4{
+  0%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.banner{
+  background-color: #44fbb6;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header {
+  background: #00ccff;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
+  z-index: 1;
 }
 .header_text {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -177,6 +269,8 @@ body {
 
 @media screen and (min-width: 850px) {
   .header {
+    width: 70%;
+    height: 210px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
