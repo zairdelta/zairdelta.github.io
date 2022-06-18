@@ -33,13 +33,13 @@
 }
 .imgSkills #iconsSkills{
     margin-top: 20px;
-    color: cyan;
+    color: #44fbb6;
     width: 100px;
     height: 100px;
 }
 .imgSkills #boxi{
     margin-top: 20px;
-    color: cyan;
+    color: #44fbb6;
     font-size: 120px;
 }
 @media (max-width: 600px) {
