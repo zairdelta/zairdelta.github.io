@@ -1,6 +1,7 @@
 .portafolio{
-    height: 100vh;
+    height: 100%;
     display: block;
+    margin-top: 80px;
 }
 .itemsPortafolio{
     display: flex;

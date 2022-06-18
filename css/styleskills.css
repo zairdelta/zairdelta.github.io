@@ -12,8 +12,9 @@
     color: white;
 }
 .aboutMe{
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    margin-top: 80px;
 }
 #textAbout{
     text-align: center;
@@ -26,7 +27,8 @@
 
 .skills{
     color: white;
-    height: 100vh;
+    height: 100%;
+    margin-top: 80px;
     display: block;
 }
 .imgSkills #iconsSkills{
@@ -48,16 +50,19 @@
     .itemsAbout{
         flex-direction: column;
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .aboutMe{
         margin-top: 80px;
         height: 100%;
     }
     .itemsAbout picture img{
-        width: 100%;
+        width: 300px;
+        height: 300px;
     }
     #textAbout{
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 }
