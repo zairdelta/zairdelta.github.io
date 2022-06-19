@@ -74,7 +74,7 @@
 
 } */
 body {
-  background: url(../img/hero.jpg) no-repeat 50% 50%;
+  background:#121212;
   background-size: cover;
   width: 100%;
 }
@@ -171,7 +171,6 @@ body {
   }
 }
 .banner{
-  background-color: #44fbb6;
   height: 100vh;
   overflow: hidden;
   display: flex;
