@@ -1,1 +1,285 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");*{margin: 0; padding: 0; font-family: "Montserrat", sans-serif;}/* .preloader{position: fixed; top: 0; overflow-x:hidden; overflow-y:hidden; display: flex; justify-content: center; align-items: center; width: 100%; height: 120vh; background: #070707; z-index: 5; animation: animateBg 10s linear infinite;}.preloader.out{opacity: 0; transition: 5s;}@keyframes animateBg{0%{filter:hue-rotate(0deg) ;}100%{filter: hue-rotate(160deg);}}.loader{position: relative; width: 120px; height: 120px; margin: 0 auto;}.loader span{position: absolute; top: 0; left:0; width: 100%; height: 100%; transform: rotate(calc(18deg*var(--i)));}.loader span::before{content: ''; position: absolute; top: 0; left: 0; width: 15px; height: 15px; border-radius: 50%; background-color: rgb(26, 245, 245); box-shadow: 0 0 10px rgb(26, 245, 245), 0 0 20px rgb(26, 245, 245), 0 0 40px rgb(26, 245, 245), 0 0 60px rgb(26, 245, 245), 0 0 80px rgb(26, 245, 245), 0 0 100px rgb(26, 245, 245); animation: animate 2s linear infinite; animation-delay: calc(0.1s*var(--i));}@keyframes animate{0%{transform: scale(1);}80%,100%{transform: scale(0);}}*/body{background:#121212; background-size: cover; width: 100%;}#particles-js{background-attachment: fixed; display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;}.backFonts{position: relative; width: 100%; height: 100%; background: #111; display: flex; flex-direction: column; overflow: hidden;}.backFonts .roww{position: relative; top:-50%; width: 100%; display: flex; padding: 10px 0; white-space: nowrap; font-size: 60px; transform: rotate(-30deg);}.backFonts .icon{color: rgba(0, 0, 0, 0.5); transition: 1s; padding: 0 5px; user-select: none; cursor: default;}.backFonts .icon:hover{transition: 0s; color: #44fbb6; text-shadow: 0 0 120px #44fbb6;}.backFonts .roww div{font-size: 1em; white-space: nowrap; animation: backAnimate1 80s linear infinite; animation-delay: -80s;}.backFonts .roww div:nth-child(2){animation: backAnimate2 80s linear infinite; animation-delay: -40s;}@keyframes backAnimate2{0%{transform: translateX(0%);}100%{transform: translateX(-200%);}}@keyframes backAnimate1{0%{transform: translateX(100%);}100%{transform: translateX(-100%);}}.backFonts .roww:nth-child(even) div{font-size: 1em; white-space: nowrap; animation: backAnimate3 80s linear infinite; animation-delay: -80s;}.backFonts .roww:nth-child(even) div:nth-child(2){animation: backAnimate4 80s linear infinite; animation-delay: -40s;}@keyframes backAnimate3{0%{transform: translateX(-100%);}100%{transform: translateX(100%);}}@keyframes backAnimate4{0%{transform: translateX(-200%);}100%{transform: translateX(0%);}}.banner{height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; margin: 0 auto;}.header{width: 90%; height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; z-index: 1;}.header_text{box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); width: 100%; height: 120px; color: white; padding: 10px; font-style: italic; font-weight: 400; line-height: 25px; text-align: center;}.front{margin: auto; white-space: nowrap; border-right: 4px solid; width: 23ch; color: white; animation: typing 2s steps(23), blink 0.5s infinite step-end alternate; overflow: hidden;}.box{position: relative; width: 200px; height: 200px; background: rgba(0, 0, 0, 0.5); border-radius: 50%; margin-top: 28px; overflow: hidden;}.box::before{content: ""; position: absolute; inset: -10px 70px; background: linear-gradient(315deg, #00ccff, #d400d4); transition: 0.5s; animation: animateloader 4s linear infinite;}.box:hover::before{inset: -20px 0px;}@keyframes animateloader{0%{transform: rotate(0deg);}0%{transform: rotate(360deg);}}.box::after{content: ""; position: absolute; inset: 6px; background: #162052; border-radius: 50%; z-index: 1;}.content{position: absolute; inset: 15px; border: 6px solid #070a1c; z-index: 2; border-radius: 50%; overflow: hidden;}.content img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: 0.5s; pointer-events: none;}@media screen and (min-width: 850px){.header{width: 70%; height: 210px; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 0 auto;}.header_text{width: 400px; height: 150px;}.box{margin-top: 0;}}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* .preloader {
+  position: fixed;
+  top: 0;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
+  background: #070707;
+  z-index: 5;
+  animation: animateBg 10s linear infinite;
+}
+.preloader.out{
+  opacity: 0;
+  transition: 5s;
+}
+@keyframes animateBg{
+  0%{
+    filter:hue-rotate(0deg) ;
+  }
+  100%{
+    filter: hue-rotate(160deg);
+  }
+}
+.loader{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.loader span{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(18deg*var(--i)));
+
+}
+.loader span::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(26, 245, 245);
+  box-shadow: 0 0 10px rgb(26, 245, 245),
+              0 0 20px rgb(26, 245, 245),
+              0 0 40px rgb(26, 245, 245),
+              0 0 60px rgb(26, 245, 245),
+              0 0 80px rgb(26, 245, 245),
+              0 0 100px rgb(26, 245, 245);
+  animation: animate 2s linear infinite;
+  animation-delay: calc(0.1s*var(--i));
+}
+@keyframes animate{
+  0%{
+    transform: scale(1);
+  }
+  80%,100%{
+    transform: scale(0);
+  }
+
+} */
+body {
+  background:#121212;
+  background-size: cover;
+  width: 100%;
+}
+#particles-js {
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100vh;
+}
+.backFonts{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.backFonts .roww{
+  position: relative;
+  top:-50%;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  white-space: nowrap;
+  font-size: 60px;
+  transform: rotate(-30deg);
+}
+.backFonts .icon{
+  color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  padding: 0 5px;
+  user-select: none;
+  cursor: default;
+}
+.backFonts .icon:hover{
+  transition: 0s;
+  color: #44fbb6;
+  text-shadow: 0 0 120px #44fbb6;
+}
+.backFonts .roww div{
+  font-size: 1em;
+  white-space: nowrap;
+  animation: backAnimate1 80s linear infinite;
+  animation-delay: -80s;
+}
+.backFonts .roww div:nth-child(2){
+  animation: backAnimate2 80s linear infinite;
+  animation-delay: -40s;
+}
+@keyframes backAnimate2{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+@keyframes backAnimate1{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.backFonts .roww:nth-child(even) div{
+  font-size: 1em;
+  white-space: nowrap;
+  animation: backAnimate3 80s linear infinite;
+  animation-delay: -80s;
+}
+.backFonts .roww:nth-child(even) div:nth-child(2){
+  animation: backAnimate4 80s linear infinite;
+  animation-delay: -40s;
+}
+@keyframes backAnimate3{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+@keyframes backAnimate4{
+  0%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.banner{
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+.header_text {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 120px;
+  color: white;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.front {
+  margin: auto;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 23ch;
+  color: white;
+  animation: typing 2s steps(23), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin-top: 28px;
+  overflow: hidden;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -10px 70px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animateloader 4s linear infinite;
+}
+.box:hover::before {
+  inset: -20px 0px;
+}
+@keyframes animateloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #162052;
+  border-radius: 50%;
+  z-index: 1;
+}
+.content {
+  position: absolute;
+  inset: 15px;
+  border: 6px solid #070a1c;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 850px) {
+  .header {
+    width: 70%;
+    height: 210px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .header_text {
+    width: 400px;
+    height: 150px;
+  }
+  .box{
+    margin-top: 0;
+  }
+}
+
