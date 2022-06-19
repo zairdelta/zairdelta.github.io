@@ -98,12 +98,12 @@ body {
 }
 .backFonts .roww{
   position: relative;
-  top:-70%;
+  top:-50%;
   width: 100%;
   display: flex;
   padding: 10px 0;
   white-space: nowrap;
-  font-size: 64px;
+  font-size: 60px;
   transform: rotate(-30deg);
 }
 .backFonts .icon{
