@@ -223,7 +223,7 @@ body {
   content: "";
   position: absolute;
   inset: -10px 70px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
+  background: linear-gradient(315deg, #00ffc8, #ff0000);
   transition: 0.5s;
   animation: animateloader 4s linear infinite;
 }
