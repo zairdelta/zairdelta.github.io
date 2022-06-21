@@ -17,12 +17,19 @@
     margin-top: 80px;
 }
 #textAbout{
-    text-align: center;
+    text-align:start;
     width: 40%;
 }
 .itemsAbout{
     display: flex;
     justify-content: space-around;
+}
+.itemsAbout picture img{
+   text-align: center;
+}
+.itemsAbout ul{
+    text-align: start;
+    color: #44fbb6;
 }
 
 .skills{
@@ -46,7 +53,8 @@
     color: #44fbb6;
     font-size: 120px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 750px) {
     .skills{
         margin-top: 80px;
         height: 100%;
