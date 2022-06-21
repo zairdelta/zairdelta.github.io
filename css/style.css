@@ -78,6 +78,16 @@ body {
   background-size: cover;
   width: 100%;
 }
+.cajaVideo{
+  width: 100%;
+}
+@media (max-width: 1400px) {
+ .cajaVideo{
+  width: 1600px;
+ }
+ 
+}
+
 #particles-js {
   background-attachment: fixed;
   display: flex;
@@ -96,80 +106,7 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-.backFonts .roww{
-  position: relative;
-  top:-50%;
-  width: 100%;
-  display: flex;
-  padding: 10px 0;
-  white-space: nowrap;
-  font-size: 60px;
-  transform: rotate(-30deg);
-}
-.backFonts .icon{
-  color: rgba(0, 0, 0, 0.5);
-  transition: 1s;
-  padding: 0 5px;
-  user-select: none;
-  cursor: default;
-}
-.backFonts .icon:hover{
-  transition: 0s;
-  color: #44fbb6;
-  text-shadow: 0 0 120px #44fbb6;
-}
-.backFonts .roww div{
-  font-size: 1em;
-  white-space: nowrap;
-  animation: backAnimate1 80s linear infinite;
-  animation-delay: -80s;
-}
-.backFonts .roww div:nth-child(2){
-  animation: backAnimate2 80s linear infinite;
-  animation-delay: -40s;
-}
-@keyframes backAnimate2{
-  0%{
-    transform: translateX(0%);
-  }
-  100%{
-    transform: translateX(-200%);
-  }
-}
-@keyframes backAnimate1{
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(-100%);
-  }
-}
-.backFonts .roww:nth-child(even) div{
-  font-size: 1em;
-  white-space: nowrap;
-  animation: backAnimate3 80s linear infinite;
-  animation-delay: -80s;
-}
-.backFonts .roww:nth-child(even) div:nth-child(2){
-  animation: backAnimate4 80s linear infinite;
-  animation-delay: -40s;
-}
-@keyframes backAnimate3{
-  0%{
-    transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(100%);
-  }
-}
-@keyframes backAnimate4{
-  0%{
-    transform: translateX(-200%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-}
+
 .banner{
   height: 100vh;
   overflow: hidden;
@@ -223,7 +160,7 @@ body {
   content: "";
   position: absolute;
   inset: -10px 70px;
-  background: linear-gradient(315deg, #00ffc8, #ff0000);
+  background: linear-gradient(315deg, #00ffc8, #1e6ac1);
   transition: 0.5s;
   animation: animateloader 4s linear infinite;
 }
